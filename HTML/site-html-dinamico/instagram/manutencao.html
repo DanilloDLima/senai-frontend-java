@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Dinossauro</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+        }
+        #gameCanvas {
+            display: block;
+            background: #fff;
+            margin: 0 auto;
+            border: 2px solid #000;
+        }
+        #constructionMessage {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="constructionMessage">
+        Site em construção
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <script>
+        // Adiciona a mensagem de construção no início
+        document.getElementById('constructionMessage').style.display = 'block';
+
+        // Simula uma espera para o site estar pronto
+        setTimeout(() => {
+            document.getElementById('constructionMessage').style.display = 'none';
+            startGame();
+        }, 3000); // 3 segundos para mostrar a mensagem de construção
+
+        function startGame() {
+            const canvas = document.getElementById('gameCanvas');
+            const ctx = canvas.getContext('2d');
+
+            canvas.width = 800;
+            canvas.height = 200;
+
+            // Load sprites
+            const dinoSprite = new Image();
+            dinoSprite.src = 'dino.png'; // Substitua pelo caminho do seu sprite do dinossauro
+            const cactusSprite = new Image();
+            cactusSprite.src = 'cactus.png'; // Substitua pelo caminho do seu sprite do cacto
+
+            const dino = {
+                x: 50,
+                y: canvas.height - 60,
+                width: 40,
+                height: 60,
+                sprite: dinoSprite,
+                jumpSpeed: -12,
+                gravity: 0.8,
+                velocity: 0,
+                jumping: false
+            };
+
+            const cactus = {
+                x: canvas.width,
+                y: canvas.height - 60,
+                width: 20,
+                height: 60,
+                sprite: cactusSprite,
+                speed: 6
+            };
+
+            function drawDino() {
+                ctx.drawImage(dino.sprite, dino.x, dino.y, dino.width, dino.height);
+            }
+
+            function drawCactus() {
+                ctx.drawImage(cactus.sprite, cactus.x, cactus.y, cactus.width, cactus.height);
+            }
+
+            function update() {
+                if (dino.jumping) {
+                    dino.velocity += dino.gravity;
+                    dino.y += dino.velocity;
+
+                    if (dino.y >= canvas.height - 60) {
+                        dino.y = canvas.height - 60;
+                        dino.jumping = false;
+                        dino.velocity = 0;
+                    }
+                }
+
+                cactus.x -= cactus.speed;
+                if (cactus.x + cactus.width < 0) {
+                    cactus.x = canvas.width;
+                }
+
+                if (cactus.x < dino.x + dino.width &&
+                    cactus.x + cactus.width > dino.x &&
+                    cactus.y < dino.y + dino.height &&
+                    cactus.y + cactus.height > dino.y) {
+                    alert("Game Over!");
+                    cactus.x = canvas.width;
+                }
+
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                drawDino();
+                drawCactus();
+
+                requestAnimationFrame(update);
+            }
+
+            document.addEventListener('keydown', function(event) {
+                if (event.code === 'Space' && !dino.jumping) {
+                    dino.jumping = true;
+                    dino.velocity = dino.jumpSpeed;
+                }
+            });
+
+            update();
+        }
+    </script>
+</body>
+</html>

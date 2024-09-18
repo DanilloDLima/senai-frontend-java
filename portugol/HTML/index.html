@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade case</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="content">
+            <h1>Digite a opção abaixo</h1>
+            <button id="atividade1" onclick="atividade1()">exercicio1</button>
+            <button id="atividade2" onclick="atividade2()">exercicio2</button>
+            <button id="atividade3" onclick="atividade3()">exercicio3</button>
+        </div>
+        <div class="content2">
+            <p><span id="questao"></span></p> 
+            <div id="inputContainer" >
+                <div class="input1" >
+                    <input type="text" id="userInput">
+                    <button onclick="checarResultado()">executar</button>
+                    <button onclick="limpar()">limpar</button>
+                    <p><span id="resultado"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

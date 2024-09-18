@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Atividades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+        }
+        .output-container {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            width: 33%;
+            display: flex;
+        }
+        .output-container h2 {
+            margin: 0;
+            padding: 10px;
+            background-color: #e0e0e0;
+            border-bottom: 1px solid #ddd;
+        }
+        .output {
+            padding: 15px ;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercícios de JavaScript</h1>
+        <p>Resultados das atividades de JavaScript</p>
+    </header>
+
+    <div class="output-container" id="atividade1">
+        <h2>Atividade 1</h2>
+        <div class="output"></div>
+    </div>
+    <div class="output-container" id="atividade2">
+        <h2>Atividade 2</h2>
+        <div class="output"></div>
+    </div>
+    <div class="output-container" id="atividade3">
+        <h2>Atividade 3</h2>
+        <div class="output"></div>
+    </div>
+    <div class="output-container" id="atividade4">
+        <h2>Atividade 4</h2>
+        <div class="output"></div>
+    </div>
+    <div class="output-container" id="atividade5">
+        <h2>Atividade 5</h2>
+        <div class="output"></div>
+    </div>
+    <div class="output-container" id="atividade6">
+        <h2>Atividade 6</h2>
+        <div class="output"></div>
+    </div>
+
+    <div class="output-container" id="atividade1-produto">
+        <h2>Produto</h2>
+        <div class="output"></div>
+    </div>
+    <div class="output-container" id="atividade2-dia">
+        <h2>Dia da Semana</h2>
+        <div class="output"></div>
+    </div>
+    <div class="output-container" id="atividade3-sinal">
+        <h2>Sinal de Trânsito</h2>
+        <div class="output"></div>
+    </div>
+    <div class="output-container" id="atividade4-estacao">
+        <h2>Estação do Ano</h2>
+        <div class="output"></div>
+    </div>
+    <div class="output-container" id="atividade5-nivel">
+        <h2>Nível de Ensino</h2>
+        <div class="output"></div>
+    </div>
+    <div class="output-container" id="atividade6-clima">
+        <h2>Clima</h2>
+        <div class="output"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            //---Atividade 1---
+            let output = '';
+            for (let i = 1; i <= 10; i++) {                
+                if(i <= 9){
+                    output += i + ', ';
+                }else{
+                    output += i + '';
+                }
+            }
+            document.querySelector('#atividade1 .output').innerHTML = output;
+
+            //---Atividade 2---
+            output = '';
+            for (let i = 10; i >= 1; i--) {
+                if(i >= 2){
+                    output += i + ', ';
+                }else{
+                    output += i + '';
+                }
+            }
+            document.querySelector('#atividade2 .output').innerHTML = output;
+
+            //---Atividade 3---
+            output = '';
+            for (let i = 5; i >= 1; i--) {
+                if(i >= 2){
+                    output += i + ', ';
+                }else{
+                    output += i + '';
+                }
+            }
+            document.querySelector('#atividade3 .output').innerHTML = output;
+
+            //---Atividade 4---
+            output = '';
+            for (let i = 10; i >= 1; i -= 2) {
+                if(i >= 2){
+                    output += i + ', ';
+                }else{
+                    output += i + '';
+                }
+            }
+            document.querySelector('#atividade4 .output').innerHTML = output;
+
+            //---Atividade 5---
+            output = '';
+            for (let i = 1; i <= 30; i += 3) {
+                if(i <= 27){
+                    output += i + ', ';
+                }else{
+                    output += i + '';
+                }
+            }
+            document.querySelector('#atividade5 .output').innerHTML = output;
+
+            //---Atividade 6---
+            output = '';
+            for (let i = 2; i <= 20; i += 2) {
+                if(i <= 19){
+                    output += i + ', ';
+                }else{
+                    output += i + '';
+                }
+            }
+            document.querySelector('#atividade6 .output').innerHTML = output;
+
+            //---Atividade 1 (Produto)---
+            const codigoProduto = parseInt(prompt("Insira o código do produto de 1 a 5: "));
+            function codigo(n) {
+                const produto = {
+                    1: () => 'Arroz',
+                    2: () => 'Feijão',
+                    3: () => 'Macarrão',
+                    4: () => 'Carne',
+                    5: () => 'Leite',
+                    'outro': () => 'Produto não encontrado'
+                };
+                return (produto[n] || produto['outro'])();
+            }
+            document.querySelector('#atividade1-produto .output').innerHTML = codigo(codigoProduto);
+
+            //---Atividade 2 (Dia da Semana)---
+            const numeroDia = parseInt(prompt("Insira um número de 1 a 7: "));
+            function diaDaSemana(n) {
+                const dias = {
+                    1: () => 'Domingo',
+                    2: () => 'Segunda-feira',
+                    3: () => 'Terça-feira',
+                    4: () => 'Quarta-feira',
+                    5: () => 'Quinta-feira',
+                    6: () => 'Sexta-feira',
+                    7: () => 'Sábado',
+                    'outro': () => 'Número inválido'
+                };
+                return (dias[n] || dias['outro'])();
+            }
+            document.querySelector('#atividade2-dia .output').innerHTML = diaDaSemana(numeroDia);
+
+            //---Atividade 3 (Sinal de Trânsito)---
+            const corSinal = prompt("Insira uma cor do sinal de trânsito (vermelho, amarelo, ou verde): ").toLowerCase();
+            function sinalTransito(cor) {
+                const sinais = {
+                    vermelho: () => 'Pare',
+                    amarelo: () => 'Atenção',
+                    verde: () => 'Siga',
+                    'outro': () => 'Cor inválida'
+                };
+                return (sinais[cor] || sinais['outro'])();
+            }
+            document.querySelector('#atividade3-sinal .output').innerHTML = sinalTransito(corSinal);
+
+            //---Atividade 4 (Estação do Ano)---
+            const estacaoAno = parseInt(prompt("Insira um número de 1 a 4: "));
+            function estacao(n) {
+                const estacoes = {
+                    1: () => 'Verão',
+                    2: () => 'Outono',
+                    3: () => 'Inverno',
+                    4: () => 'Primavera',
+                    'outro': () => 'Número inválido'
+                };
+                return (estacoes[n] || estacoes['outro'])();
+            }
+            document.querySelector('#atividade4-estacao .output').innerHTML = estacao(estacaoAno);
+
+            //---Atividade 5 (Nível de Ensino)---
+            const nivelEnsino = parseInt(prompt("Insira um número de 1 a 4: "));
+            function nivelDeEnsino(n) {
+                const niveis = {
+                    1: () => 'Ensino Fundamental',
+                    2: () => 'Ensino Médio',
+                    3: () => 'Ensino Superior',
+                    4: () => 'Pós-graduação',
+                    'outro': () => 'Nível inválido'
+                };
+                return (niveis[n] || niveis['outro'])();
+            }
+            document.querySelector('#atividade5-nivel .output').innerHTML = nivelDeEnsino(nivelEnsino);
+
+            //---Atividade 6 (Clima)---
+            const tipoClima = parseInt(prompt("Insira um número de 1 a 5: "));
+            function clima(n) {
+                const climas = {
+                    1: () => 'Ensolarado',
+                    2: () => 'Nublado',
+                    3: () => 'Chuvoso',
+                    4: () => 'Nevando',
+                    5: () => 'Ventando',
+                    'outro': () => 'Clima inválido'
+                };
+                return (climas[n] || climas['outro'])();
+            }
+            document.querySelector('#atividade6-clima .output').innerHTML = clima(tipoClima);
+        });
+    </script>
+</body>
+</html>

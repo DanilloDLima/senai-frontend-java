@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Restaurante Delícias</title>
+    <!-- Link para o Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">    
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome para ícones JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <!-- Font Awesome para ícones CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+        .category-icon {
+            font-size: 3rem;
+            color: #007bff;
+        }
+        footer {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Restaurante Delícias do Tio Calvo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Início <span class="sr-only">(atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cardapio.html">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reservas.html">Reservas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Rotativo (Carousel) -->
+    <div id="carouselExampleIndicators" class="carousel slide mt-4">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1200x400?text=Prato+1" class="d-block w-100" alt="Prato 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Prato Delicioso 1</h5>
+                    <p>Descubra o sabor de nossas especialidades exóticas.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400?text=Prato+2" class="d-block w-100" alt="Prato 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Prato Delicioso 2</h5>
+                    <p>Uma explosão de sabores em cada garfada.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400?text=Prato+3" class="d-block w-100" alt="Prato 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Prato Delicioso 3</h5>
+                    <p>Experimente o melhor da nossa cozinha.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <!-- Seção de Categorias do Cardápio -->
+    <div class="container mt-5">
+        <div class="row text-center">
+            <!-- Categoria 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-bowl-food category-icon mb-3"></i>
+                        <h5 class="card-title">Entradas</h5>
+                        <p class="card-text">Aperitivos e entradas perfeitas para começar a sua refeição.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Categoria 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-utensils category-icon mb-3"></i>
+                        <h5 class="card-title">Pratos Principais</h5>
+                        <p class="card-text">Pratos principais que vão satisfazer o seu apetite.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Categoria 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-cake category-icon mb-3"></i>
+                        <h5 class="card-title">Sobremesas</h5>
+                        <p class="card-text">Deliciosas sobremesas para finalizar sua refeição com chave de ouro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <p><strong>Horários de Funcionamento:</strong> Segunda a Domingo, das 11h às 23h</p>
+            <p><strong>Endereço:</strong> Rua Exemplo, 456, Cidade, Estado</p>
+            <p>
+                <strong>Redes Sociais:</strong>
+                <a href="https://facebook.com" target="_blank" class="ml-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" class="ml-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" class="ml-2"><i class="fab fa-twitter"></i></a>
+            </p>
+            <p>© 2024 Restaurante Delícias do Tio Calvo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

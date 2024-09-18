@@ -1,0 +1,121 @@
+<!-- Crie uma página de blog simples utilizando o framework Bootstrap.
+1. Página Inicial (index.html):
+Cabeçalho (Header):
+Crie um menu de navegação (navbar) simples, com links para "Home", "Blog" e "Contato".
+
+2-Seção de Posts Recentes:
+Um título com "Posts Recentes".
+Utilize o sistema de grid do Bootstrap para exibir três artigos. Cada artigo deve estar dentro de um card contendo:
+Imagem de destaque.
+Título do post.
+Um resumo do conteúdo do post (até 3 linhas).
+Um botão "Leia Mais" que direciona para o post completo.
+
+3-Seção de Inscrição :
+Um campo simples com um formulário para inscrição na newsletter, contendo:
+E-mail.
+Um botão "Inscreva-se".
+
+4-Rodapé (Footer):
+Um rodapé simples com links para as redes sociais e um texto de direitos autorais. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do Vascão</title>
+    <!-- Link para o Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho (Header) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: aqua">
+        <a class="navbar-brand" href="#">Meu Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Seção de Posts Recentes -->
+    <div class="container mt-5">
+        <h2>Posts Recentes</h2>
+        <div class="row">
+            <!-- Artigo 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Imagem do Post 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do Post 1</h5>
+                        <p class="card-text">Resumo do conteúdo do post 1. Aqui você pode adicionar uma breve descrição sobre o que o post aborda. O resumo deve ser conciso e informativo.</p>
+                        <a href="#" class="btn btn-primary">Leia Mais</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Artigo 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Imagem do Post 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do Post 2</h5>
+                        <p class="card-text">Resumo do conteúdo do post 2. Aqui você pode adicionar uma breve descrição sobre o que o post aborda. O resumo deve ser conciso e informativo.</p>
+                        <a href="#" class="btn btn-primary">Leia Mais</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Artigo 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Imagem do Post 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do Post 3</h5>
+                        <p class="card-text">Resumo do conteúdo do post 3. Aqui você pode adicionar uma breve descrição sobre o que o post aborda. O resumo deve ser conciso e informativo.</p>
+                        <a href="#" class="btn btn-primary">Leia Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Inscrição -->
+    <div class="container mt-5">
+        <h2>Inscreva-se na Newsletter</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+            </div>
+            <button type="submit" class="btn btn-primary">Inscreva-se</button>
+        </form>
+    </div>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            <p>© 2024 Danillo Dias de Lima. Todos os direitos reservados.</p>
+            <p>
+                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

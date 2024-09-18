@@ -1,0 +1,81 @@
+<!--
+Crie uma página de contato utilizando o framework Bootstrap.
+1. Página Inicial (index.html):
+Utilize o HTML/CSS e Bootstrap para criar uma página com:
+Cabeçalho (Header):
+Crie um menu de navegação (navbar) simples, com links para "Home" e "Contato".
+Seção de Contato:
+Um título com "Entre em Contato".
+Um pequeno parágrafo incentivando os visitantes a entrar em contato com você.
+Formulário de Contato:
+Utilize o formulário do Bootstrap para criar os seguintes campos:
+Nome.
+E-mail.
+Mensagem (campo de texto longo).
+Inclua um botão de "Enviar.
+Rodapé (Footer):
+
+Crie um rodapé simples com seus direitos autorais (ex: "© 2024 Seu Nome").
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Meu Blog</title>
+    <!-- Link para o Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">    
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho (Header) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Meu Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Seção de Contato -->
+    <div class="container mt-5">
+        <h2>Entre em Contato</h2>
+        <p>Estamos aqui para ouvir você! Se você tiver qualquer dúvida, sugestão ou apenas quiser dizer um olá, não hesite em entrar em contato conosco preenchendo o formulário abaixo.</p>
+        
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            <p>© 2024 Danillo Dias de Lima. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

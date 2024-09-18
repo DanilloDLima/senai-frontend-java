@@ -1,0 +1,59 @@
+Vamos agora definir os principais aspectos do negócio da empresa fictícia 
+"Serviços Rápidos" usando o Modelo Canvas de Negócios.
+
+1. Proposta de Valor
+Serviços Rápidos oferece serviços diversos e rápidos para atender às necessidades
+ diárias dos clientes, com um foco em eficiência e qualidade.
+Principais Serviços: Atendimento de manutenção doméstica, serviços de limpeza, 
+assistência técnica e pequenos reparos.
+
+2. Segmentos de Clientes
+Residenciais: Proprietários de imóveis que precisam de serviços rápidos e confiáveis.
+Comerciais: Pequenas empresas e escritórios que necessitam de manutenção e 
+assistência para manter suas operações funcionando sem problemas.
+
+3. Canais
+Website: Principal canal para fornecer informações sobre serviços e permitir que 
+clientes entrem em contato ou solicitem serviços online.
+Telefone: Linha direta para solicitações rápidas e emergenciais.
+Email: Canal para comunicações formais e agendamentos de serviços.
+
+4. Relacionamento com Clientes
+Atendimento Personalizado: Serviço ao cliente dedicado para atender a necessidades 
+específicas.
+Suporte Pós-Serviço: Acompanhamento para garantir satisfação e resolver qualquer 
+problema pós-serviço.
+Newsletter: Atualizações regulares sobre novos serviços e promoções.
+
+5. Fontes de Receita
+Cobrança por Serviço: Receita gerada através da prestação de serviços.
+Pacotes de Serviços: Oferecimento de pacotes que combinam vários serviços 
+a um preço com desconto.
+
+6. Recursos Principais
+Equipe Qualificada: Profissionais especializados em diversas áreas de manutenção e 
+reparo.
+Ferramentas e Equipamentos: Equipamentos necessários para a realização dos serviços 
+oferecidos.
+Website e Tecnologia: Plataforma online para marketing, gerenciamento de clientes e 
+agendamento de serviços.
+
+7. Atividades-Chave
+Prestação de Serviços: Execução eficiente dos serviços oferecidos.
+Marketing e Vendas: Promoção da empresa para atrair novos clientes e manter a 
+base de clientes existente.
+Gestão de Qualidade: Garantia da qualidade dos serviços prestados e satisfação do 
+cliente.
+
+8. Parcerias Principais
+Fornecedores de Ferramentas: Empresas que fornecem equipamentos e materiais 
+necessários.
+Parceiros Locais: Empresas e profissionais locais que podem colaborar em serviços 
+específicos ou recomendar a empresa.
+
+9. Estrutura de Custos
+Salários e Benefícios: Custos relacionados ao pagamento da equipe de serviço.
+Custos de Ferramentas e Materiais: Aquisição e manutenção de equipamentos necessários 
+para a prestação de serviços.
+Despesas Operacionais: Custos de manutenção do website, marketing e outras despesas 
+gerais.

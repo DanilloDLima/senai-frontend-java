@@ -1,0 +1,78 @@
+.cartao {
+    border: 5px solid gray;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(95, 95, 247);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    align-items: center;   
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+
+}
+#CTA{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: lowercase;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.cabecalho{
+    background-image: linear-gradient( to right, orange, yellow);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 15px;
+    border-bottom: 3px solid black;
+}
+
+.destaque{
+    background-color: lightgray;
+    color: darkblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-style: italic;
+    padding: 30px;
+    margin: 20px;
+}
+
+.navegacao {
+    display: inline-block;
+    background-color: #800080;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.paragrafoDestaque{
+    background-color: yellow;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.heading{
+    background-color: blue;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
